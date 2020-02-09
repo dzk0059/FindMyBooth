@@ -3,20 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#464e64"
 
     >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:orientation="vertical"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
 
-            android:text="Carrer fairs"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/login"/>
 
     </LinearLayout>
 
@@ -27,19 +29,14 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="This is Beta Version" />
 
         <EditText
             android:id="@+id/E_mail"
             android:layout_width="200dp"
             android:layout_height="40dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="100dp"
             android:hint="E-mail"
-            android:textColor="#000000" />
-
+            android:textColor="#FFFFFF" />
 
         <EditText
             android:id="@+id/password_text"
@@ -47,16 +44,16 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:hint="Password"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/signin_Button"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:text="Sign In"
-
-            android:textColor="#000000" />
+            android:background="#d6885f"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/register_Button"
@@ -64,7 +61,8 @@
             android:layout_height="40dp"
             android:layout_marginTop="15dp"
             android:text="Register"
-            android:textColor="#000000" />
+            android:background="#d6885f"
+            android:textColor="#FFFFFF" />
 
         <ProgressBar
             android:layout_width="50dp"
