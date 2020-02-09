@@ -49,7 +49,7 @@ public class Menu_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Move to next Sub3Activity (Screen Transition)
-                Intent move_main_sub3 = new Intent(Menu_Activity.this,Status_Activity.class);
+                Intent move_main_sub3 = new Intent(Menu_Activity.this,Profile_Activity.class);
                 startActivity(move_main_sub3);
             }
         });

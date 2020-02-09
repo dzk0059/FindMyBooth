@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical"
+    android:background="#464e64"
     >
 
     <RelativeLayout android:id="@+id/RelativeLayout01"
         android:layout_width="fill_parent"
         android:layout_height="55dp"
         >
-        <Button
-            android:id="@+id/previousSection"
+        <ImageButton
+            android:id="@+id/Home"
             android:layout_alignParentLeft="true"
             android:layout_marginTop="10dp"
             android:layout_width="40dp"
             android:layout_height="35dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:background="#F44336"
+            android:background="#d6885f"
             android:gravity="center"
-            android:text="&lt;"
-            android:textColor="#FFFFFF"
+            android:src="@drawable/home"
+            android:textColor="#464e64"
             android:textSize="24sp" />
         <TextView
             android:layout_height="35dp"
@@ -32,7 +35,7 @@
             android:layout_centerInParent="true"
             android:gravity="center"
             android:textSize="24sp"
-            android:background="#F44336"
+            android:background="#d6885f"
             android:textColor="#FFFFFF"
             android:text="Section A" />
 
@@ -44,10 +47,10 @@
             android:layout_height="35dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:background="#F44336"
+            android:background="#d6885f"
             android:gravity="center"
             android:text="&gt;"
-            android:textColor="#FFFFFF"
+            android:textColor="#464e64"
             android:textSize="24sp" />
 
     </RelativeLayout>
@@ -56,7 +59,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_marginTop="16dp"
-        android:layout_height="480dp"
+        android:layout_height="450dp"
         android:background="?attr/selectableItemBackground"
         >
 
@@ -72,11 +75,11 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="1"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num1"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/b2"
@@ -85,11 +88,11 @@
                 android:layout_height="100dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="2"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num2"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/b3"
@@ -97,11 +100,11 @@
                 android:layout_height="100dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="3"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num3"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/b4"
@@ -109,14 +112,15 @@
                 android:layout_height="100dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="4"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num4"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
         </TableRow>
         <TableRow
+            android:id="@+id/tbrow2"
             android:layout_height="110dp"
             android:layout_marginBottom="10dp"
             >
@@ -126,30 +130,26 @@
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="12dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="12"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num12"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="0dp"
 
                 android:layout_height="100dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
+                android:layout_marginRight="12dp"
+                android:layout_weight="2"
                 android:gravity="center"
-                android:textSize="24sp" />
+                android:textSize="16sp"
+                android:textColor="@color/greenLight"
+                android:text="Booths Recommended for you"
+                />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/b5"
@@ -157,11 +157,11 @@
                 android:layout_height="100dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="5"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num5"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
 
         </TableRow>
@@ -177,11 +177,11 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="11"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num11"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -206,11 +206,11 @@
                 android:layout_height="100dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="6"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num6"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
         </TableRow>
         <TableRow
@@ -225,11 +225,11 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="10"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num10"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/b9"
@@ -238,11 +238,11 @@
                 android:layout_height="100dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="9"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num9"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/b8"
@@ -250,11 +250,11 @@
                 android:layout_height="100dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="8"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num8"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/b7"
@@ -262,11 +262,11 @@
                 android:layout_height="100dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
-                android:background="#F44336"
+                android:background="#d6885f"
                 android:gravity="center"
-                android:text="7"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/num7"
+                android:textColor="#464e64"
+                android:textSize="30sp" />
 
         </TableRow>
     </TableLayout>
@@ -286,8 +286,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:text="1: Company 1" />
+                android:textSize="18sp"
+                android:text="1: Motion Industries"
+                android:textColor="#FFFFFF"/>
             <TextView
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
@@ -295,8 +296,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:text="2: Company 2" />
+                android:textSize="18sp"
+                android:text="2: McLeod Software"
+                android:textColor="#FFFFFF"/>
+            />
 
 
         </TableRow>
@@ -310,8 +313,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:text="3: Company 3" />
+                android:textSize="18sp"
+                android:text="3: TSYS"
+                android:textColor="#FFFFFF"/>
+            />
             <TextView
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
@@ -319,8 +324,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:text="4: Company 4" />
+                android:textSize="18sp"
+                android:text="4: JB Hunt 360"
+                android:textColor="#FFFFFF"/>
+            />
 
         </TableRow>
         <TableRow android:layout_width="0dp"
@@ -333,8 +340,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:text="5: Company 5" />
+                android:textSize="18sp"
+                android:text="5: Investor Protection"
+                android:textColor="#FFFFFF"/>
+            />
             <TextView
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
@@ -342,14 +351,17 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:text="6: Company 6" />
+                android:textSize="18sp"
+                android:text="6: Auburn University"
+                android:textColor="#FFFFFF"/>
+            />
 
         </TableRow>
 
         <TableRow android:layout_width="0dp"
             android:layout_weight="1"
             >
+            android:textSize="18sp"
             <TextView
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
@@ -357,8 +369,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:text="7: Company 7" />
+                android:textSize="18sp"
+                android:text="7: nousys"
+                android:textColor="#FFFFFF"/>
+            />
             <TextView
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
@@ -366,32 +380,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:text="8: Company 8" />
-
-        </TableRow>
-
-        <TableRow android:layout_width="0dp"
-            android:layout_weight="1"
-            >
-            <TextView
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:text="9: Company 9" />
-            <TextView
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:text="10: Company 10" />
+                android:textSize="18sp"
+                android:text="8: accenture"
+                android:textColor="#FFFFFF"/>
+            />
 
         </TableRow>
 
@@ -405,8 +397,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:text="11: Company 11" />
+                android:textSize="18sp"
+                android:text="9: linode"
+                android:textColor="#FFFFFF"/>
+            />
             <TextView
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
@@ -414,8 +408,38 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:text="12: Company 12" />
+                android:textSize="18sp"
+                android:text="10: Emcor"
+                android:textColor="#FFFFFF"/>
+            />
+
+        </TableRow>
+
+        <TableRow android:layout_width="0dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="11: Brooksource"
+                android:textColor="#FFFFFF"/>
+            />
+            <TextView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="12: SiteOne"
+                android:textColor="#FFFFFF"/>
+            />
 
         </TableRow>
 

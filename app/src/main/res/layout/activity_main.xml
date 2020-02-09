@@ -6,20 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:id="@+id/iv_background"
-        android:scaleType="fitCenter"
-        android:src="@drawable/slideshow"
-        android:layout_marginTop="18dp"
-        android:layout_height="match_parent"/>
-
-
-
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="395dp"
-        android:layout_height="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -36,91 +26,85 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="260dp"
-            app:srcCompat="@drawable/main_image"
-            android:layout_gravity="center" />
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/main_image" />
 
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="50dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.791">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/iv_background"
+            android:src="@drawable/slideshow"
+            android:layout_marginTop="18dp"
+            android:layout_height="200dp" />
 
 
 
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="550dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="70dp"
-            android:layout_weight="1"
-            android:layout_gravity="bottom"
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                >
 
-            android:text="Expo Map"
-            android:textSize="15dp"
-            android:textColor="#d6885f"
-            android:background="#464e64"
-            style="@style/Widget.AppCompat.Button.Borderless"/>
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Expo Map"
+                    android:textSize="15dp"
+                    android:textColor="#d6885f"
+                    android:background="#464e64"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
 
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="550dp"
-            android:layout_height="100dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="70dp"
-            android:layout_marginRight="-412dp"
-            android:layout_weight="1"
-            android:text="Location"
-            android:textSize="15dp"
-            android:textColor="#464e64"
-            android:background="#d6885f"
-            style="@style/Widget.AppCompat.Button.Borderless"/>
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="550dp"
-            android:layout_height="100dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="-30dp"
-            android:layout_weight="1"
-            android:text="Status"
-            android:textSize="15dp"
-            android:textColor="#464e64"
-            android:background="#d6885f"
-            style="@style/Widget.AppCompat.Button.Borderless"/>
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="550dp"
-            android:layout_height="100dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="-30dp"
-            android:layout_weight="1"
-            android:text="Contact Info"
-            android:textColor="#d6885f"
-            android:background="#464e64"
-            android:textSize="15dp"
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Location"
+                    android:textSize="15dp"
+                    android:textColor="#464e64"
+                    android:background="#d6885f"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
 
-            style="@style/Widget.AppCompat.Button.Borderless"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Status"
+                    android:textSize="15dp"
+                    android:textColor="#464e64"
+                    android:background="#d6885f"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Contact Info"
+                    android:textColor="#d6885f"
+                    android:background="#464e64"
+                    android:textSize="15dp"
+                    style="@style/Widget.AppCompat.Button.Borderless" />
+            </TableRow>
+        </TableLayout>
     </LinearLayout>
 </RelativeLayout>

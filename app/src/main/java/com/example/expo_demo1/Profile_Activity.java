@@ -29,7 +29,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.xml.parsers.SAXParser;
-
+//Button 3
 public class Profile_Activity extends AppCompatActivity  implements AdapterView.OnItemSelectedListener {
 
 
@@ -125,7 +125,7 @@ public class Profile_Activity extends AppCompatActivity  implements AdapterView.
 
                 //HashTable
                 HashMap<String, String> chats = new HashMap<String, String>();
-                chats.put("userId", user_email);
+                chats.put("email", user_email);
                 chats.put("FullText", fullText);
 
                 myRef.setValue(chats);
@@ -139,6 +139,7 @@ public class Profile_Activity extends AppCompatActivity  implements AdapterView.
                 //Display output
                 TextView test3 = findViewById(R.id.view3);
                 test3.setText(fullText);
+
             }
         });
 
@@ -179,7 +180,7 @@ public class Profile_Activity extends AppCompatActivity  implements AdapterView.
 
     //Set full text
     public void setFullText() {
-        fullText = Graduation_text + "." + GPA_Text + "." + major_Text;
+        fullText = Graduation_text + "/" + GPA_Text + "/" + major_Text;
     }
 
     //Set GPA text

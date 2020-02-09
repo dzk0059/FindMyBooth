@@ -10,6 +10,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 //For Button1
@@ -21,14 +23,53 @@ public class Expo_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.expo_activity);
+        //color change
+        TextView colorb1 = (TextView)findViewById(R.id.b1);
+        TextView colorb2 = (TextView)findViewById(R.id.b2);
+        TextView colorb3= (TextView)findViewById(R.id.b3);
+        TextView colorb4 = (TextView)findViewById(R.id.b4);
+        TextView colorb5 = (TextView)findViewById(R.id.b5);
+        TextView colorb6 = (TextView)findViewById(R.id.b6);
+        TextView colorb7 = (TextView)findViewById(R.id.b8);
+        TextView colorb8 = (TextView)findViewById(R.id.b7);
+        TextView colorb9 = (TextView)findViewById(R.id.b9);
+        TextView colorb10 = (TextView)findViewById(R.id.b10);
+        TextView colorb11 = (TextView)findViewById(R.id.b11);
+        TextView colorb12= (TextView)findViewById(R.id.b12);
 
+        //radomly choose numeric value
+        double gpa = 3.3;
+        int gradDate = 3;
+        int major = 5;
+
+        //color change
+        if (gpa > 3 && gradDate > 1 && (major == 5 | major == 4)) {
+
+            colorb1.setTextColor(getResources().getColor(R.color.greenLight));
+        }
+
+        if (gpa > 3.6 && gradDate > 1 && (major == 5 | major == 4)) {
+
+            colorb2.setTextColor(getResources().getColor(R.color.greenLight));
+        }
         Button next_Button = (Button) findViewById(R.id.nextSection);
         next_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Move to next Sub1Activity (Screen Transition)
+                //Move to next expo activity2 (Screen Transition)
                 Intent move_main2 = new Intent(Expo_Activity.this,Expo_Activity2.class);
                 startActivity(move_main2);
+            }
+        });
+
+        //go to home
+        ImageButton home_Button = (ImageButton) findViewById(R.id.Home);
+        home_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Move to next meun activity (Screen Transition)
+                Intent move_main3 = new Intent(Expo_Activity.this,Menu_Activity.class);
+                startActivity(move_main3);
             }
         });
 
