@@ -27,8 +27,7 @@
             android:background="#d6885f"
             android:gravity="center"
             android:src="@drawable/home"
-            android:textColor="#464e64"
-            android:textSize="24sp" />
+            />
         <TextView
             android:layout_height="35dp"
             android:layout_width="200dp"
@@ -370,7 +369,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="18sp"
-                android:text="7: nousys"
+                android:text="7: Nousys"
                 android:textColor="#FFFFFF"/>
             />
             <TextView
@@ -381,7 +380,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="18sp"
-                android:text="8: accenture"
+                android:text="8: Accenture"
                 android:textColor="#FFFFFF"/>
             />
 
@@ -398,7 +397,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="18sp"
-                android:text="9: linode"
+                android:text="9: Linode"
                 android:textColor="#FFFFFF"/>
             />
             <TextView
@@ -409,7 +408,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="18sp"
-                android:text="10: Emcor"
+                android:text="10: EMCOR"
                 android:textColor="#FFFFFF"/>
             />
 

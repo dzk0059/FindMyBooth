@@ -3,4 +3,31 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <TextView
+        android:id="@+id/emmail"
+        android:layout_width="307dp"
+        android:layout_height="278dp"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/ggpa"
+        android:layout_width="313dp"
+        android:layout_height="294dp"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/veiw3"
+        android:layout_width="313dp"
+        android:layout_height="294dp"
+
+        >
+
+    </TextView>
 </LinearLayout>

@@ -44,28 +44,13 @@ public class Read_Activity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private DatabaseReference myref;
-
-
-
-
-
     private String userId;
 
-
-    String fulltext;
-    String email;
-
     String TAG  = "profileActivity";
-    public static String output ="";
-    String Graduation_text = "";
-    String fullText = "";
 
     String user_email = "";
-    String GPA_Text;
-    String uid = "";
-    String major_Text = "";
 
-    EditText GPA_Info;
+    String uid = "";
 
     TextView view1;
     TextView view2;
@@ -76,7 +61,8 @@ public class Read_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data);
         FirebaseApp.initializeApp(this);
-
+         view1 = (TextView)findViewById(R.id.emmail) ;
+         view2 = (TextView)findViewById(R.id.ggpa) ;
 
 
 
@@ -148,6 +134,7 @@ public class Read_Activity extends AppCompatActivity {
 
         }
     }
+
 
 
 

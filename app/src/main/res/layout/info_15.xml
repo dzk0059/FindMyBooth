@@ -39,17 +39,56 @@
             android:gravity="left"
             android:textSize="26sp"
             android:textColor="#000000"
-            android:text="Company Name" />
+            android:text="Company Name"          android:background="@drawable/underline"
+            />
+
         <TextView
             android:layout_marginRight="8dp"
             android:layout_marginLeft="8dp"
 
-            android:layout_height="320dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:text="Required GPA : " />
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:text="Major : " />
+
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:text="Graduation "
+            android:background="@drawable/underline"
+
+
+            />
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:gravity="left"
             android:textSize="23sp"
             android:textColor="#000000"
-            android:text="Info15" />
+            android:text="Info16" />
+
+
 
 
 

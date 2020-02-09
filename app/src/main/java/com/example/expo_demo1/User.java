@@ -2,8 +2,8 @@ package com.example.expo_demo1;
 
 public class User {
 
-    private String email;
-    private String FullText;
+    private String email = "";
+    private String FullText = "";
 
     public String getEmail() {
         return email;

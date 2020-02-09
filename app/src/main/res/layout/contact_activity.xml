@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFFFFF"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -27,7 +28,7 @@
             android:id="@+id/imageView"
             android:layout_width="360dp"
             android:layout_height="180dp"
-            app:srcCompat="@drawable/au_career_fair_center"
+            app:srcCompat="@drawable/contactpage"
             android:layout_gravity="center"/>
 
     </LinearLayout>
@@ -50,6 +51,9 @@
             android:layout_height="wrap_content"
             android:text="Career Fair Etiquette"
             android:gravity="center"
+            android:textSize="20dp"
+            android:background="#d6885f"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"/>
     </LinearLayout>
 
@@ -65,26 +69,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         <ImageView
             android:id="@+id/proper_dress"
-            android:layout_width="188dp"
+            android:layout_width="100dp"
             android:layout_height="106dp"
-            app:srcCompat="@drawable/dress_prof" />
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/tie" />
 
         <ImageView
             android:id="@+id/bring_resume"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="106dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/bring_resume" />
+            app:srcCompat="@drawable/resume" />
 
         <ImageView
             android:id="@+id/no_chewing"
-            android:layout_width="116dp"
+            android:layout_width="100dp"
+            android:layout_marginRight="30dp"
             android:layout_height="106dp"
-            app:srcCompat="@drawable/no_chewing" />
-
+            app:srcCompat="@drawable/no" />
 
     </LinearLayout>
 
@@ -105,24 +111,33 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
             android:text="1. Dress Professionally"
+            android:textColor="#d6885f"
             android:textSize="20dp"
+            android:background="#FFFFFF"
             android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="33dp"
+            android:layout_marginLeft="20dp"
             android:text="2. Bring your resume"
             android:textSize="20dp"
+            android:textColor="#d6885f"
+            android:background="#FFFFFF"
             android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="34dp"
+            android:layout_marginLeft="20dp"
             android:text="3. Don't smoke or chew gum"
             android:textSize="20dp"
+            android:background="#FFFFFF"
+            android:textColor="#d6885f"
             android:textStyle="bold"/>
     </LinearLayout>
 
@@ -148,15 +163,17 @@
             android:textSize="20dp"
             android:gravity="center"
             android:text="Choose your contact"
-            tools:text="Choose your contact" />
+            android:textColor="#464e64"
+            android:background="#FFFFFF"
+            tools:text="Choose Your Contact:" />
 
         <Button
             android:id="@+id/mail_to_S_office"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Auburn Career Fair Center"
-            android:background="#f68026"
-            android:textColor="#ffffff "
+            android:textColor="#FFFFFF "
+            android:background="#464e64"
             android:textStyle="bold"
             android:layout_marginTop="25dp"/>
 
@@ -165,8 +182,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="App Admin(s)"
-            android:background="#f68026"
-            android:textColor="#ffffff "
+            android:background="#464e64"
+            android:textColor="#FFFFFF "
             android:textStyle="bold"
             android:layout_marginTop="25dp"/>
     </LinearLayout>

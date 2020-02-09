@@ -7,7 +7,7 @@
     android:layout_height="600dp"
     android:layout_gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,17 +39,55 @@
             android:gravity="left"
             android:textSize="26sp"
             android:textColor="#000000"
-            android:text="Investor Protection Trust" />
+            android:text="Investor Protection Trust"
+            android:background="@drawable/underline"
+            />
+
         <TextView
             android:layout_marginRight="8dp"
             android:layout_marginLeft="8dp"
 
-            android:layout_height="320dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:text="Required GPA : 2.2" />
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:text="Major : ACCT, BUSI" />
+
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:text="Graduation before May 2021"
+            android:background="@drawable/underline"
+
+
+            />
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:gravity="left"
             android:textSize="23sp"
             android:textColor="#000000"
-            android:text="Info" />
+            android:text="Description" />
 
 
 

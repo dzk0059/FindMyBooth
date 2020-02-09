@@ -93,7 +93,7 @@ public class Map_Activity extends FragmentActivity implements OnMapReadyCallback
                     break;
                 case 4:
                     info = building4;
-
+                    break;
 
                 case 5:
                     info = building5;

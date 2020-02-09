@@ -1,46 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:background="#d6885f"
-    android:orientation="vertical" >
+    >
+    <ImageButton
+        android:id="@+id/Home2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="25dp"
+        android:gravity="center"
+        android:background="@drawable/underline"
+        android:src="@drawable/home"
+        />
 
-    <Spinner
-        android:id="@+id/gradation_info"
-        android:layout_width="fill_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="200dp" />
-
-    <Spinner
-        android:id="@+id/major_info"
-        android:layout_marginTop="50dp"
-        android:layout_width="fill_parent"
-        android:layout_height="100dp" />
-
-
-
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:gravity="top"
-        android:layout_marginTop="50dp"
-        android:hint="GPA"
-        android:id="@+id/gpa_info"/>
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+
+
+
+        <Spinner
+            android:id="@+id/gradation_info"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="200dp"
+            />
+
+        <Spinner
+            android:id="@+id/major_info"
+            android:layout_marginTop="50dp"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top"
+            android:layout_marginTop="50dp"
+            android:hint="GPA"
+            android:id="@+id/gpa_info"/>
 
 
 
 
-    <Button
-        android:id="@+id/save_button"
-        android:layout_width="100dp"
-        android:layout_marginTop="50dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:background="#464e64"
-        android:textColor="#FFFFFF"
-        android:text="update" />
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#464e64"
+            android:textColor="#FFFFFF"
+            android:text="update" />
 
 
-</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
