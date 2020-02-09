@@ -62,56 +62,6 @@ public class Contact_Activity1 extends AppCompatActivity {
         String email_Address = "";
 
 
-        //How Admisson Buttons
-        Button mail_to_AddmissonButton = (Button) findViewById(R.id.mail_to_addmission);
-        mail_to_AddmissonButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                setE_mail_Address("Admission");
-
-                //Screen transition move from sub4 to sub41
-                Intent move_sub4_sub41 = new Intent(Contact_Activity1.this, Contact_Activity2.class);
-                startActivity(move_sub4_sub41);
-
-
-            }
-        });
-
-        //How International Buttons
-        Button mail_to_in_office = (Button) findViewById(R.id.mail_to_in_office);
-        mail_to_in_office.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                setE_mail_Address("International");
-
-                //Screen transition move from sub4 to sub41
-                Intent move_sub4_sub41 = new Intent(Contact_Activity1.this, Contact_Activity2.class);
-                startActivity(move_sub4_sub41);
-
-
-            }
-        });
-
-        //How financial office Buttons
-        Button mail_to_f = (Button) findViewById(R.id.mail_to_f_office);
-        mail_to_f.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                //Move to next Sub3Activity (Screen Transition)
-                setE_mail_Address("Financial");
-
-                //Screen transition move from sub4 to sub1
-                Intent move_sub4_sub41 = new Intent(Contact_Activity1.this, Contact_Activity2.class);
-                startActivity(move_sub4_sub41);
-
-
-            }
-        });
-
-
         //How test Scholarship Buttons
         Button mail_to_s_Office = (Button) findViewById(R.id.mail_to_S_office);
         mail_to_s_Office.setOnClickListener(new View.OnClickListener() {
@@ -119,7 +69,7 @@ public class Contact_Activity1 extends AppCompatActivity {
             public void onClick(View v) {
 
                 //Move to next Sub3Activity (Screen Transition)
-                setE_mail_Address("Scholarships");
+                setE_mail_Address("Auburn Career Fair Center");
 
                 //Screen transition move from sub4 to sub1
                 Intent move_sub4_sub41 = new Intent(Contact_Activity1.this, Contact_Activity2.class);
@@ -136,7 +86,7 @@ public class Contact_Activity1 extends AppCompatActivity {
             public void onClick(View v) {
 
                 //Move to next Sub3Activity (Screen Transition)
-                setE_mail_Address("Test");
+                setE_mail_Address("App Admin(s)");
 
                 //Screen transition move from sub4 to sub1
                 Intent move_sub4_sub41 = new Intent(Contact_Activity1.this, Contact_Activity2.class);

@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -33,8 +33,101 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="387dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Career Fair Etiquette" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="393dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+
+        <ImageView
+            android:id="@+id/proper_dress"
+            android:layout_width="188dp"
+            android:layout_height="106dp"
+            app:srcCompat="@drawable/dress_prof" />
+
+        <ImageView
+            android:id="@+id/bring_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="106dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bring_resume" />
+
+        <ImageView
+            android:id="@+id/no_chewing"
+            android:layout_width="116dp"
+            android:layout_height="106dp"
+            app:srcCompat="@drawable/no_chewing" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="399dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="1. Dress Professionally"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="2. Bring your resume"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="3. Don't smoke or chew gum"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="200dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="15dp"
@@ -43,56 +136,23 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lines="5"
+            android:lines="1"
+            android:textSize="20dp"
+            android:gravity="center"
             android:text="Choose your contact"
             tools:text="Choose your contact" />
-
-        <Button
-            android:id="@+id/mail_to_addmission"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Addmission"
-            android:background="#f68026"
-            android:textColor="#ffffff "
-            android:textStyle="bold"
-            android:layout_marginTop="25dp"
-            />
-
-        <Button
-            android:id="@+id/mail_to_f_office"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Financial office"
-            android:background="#f68026"
-            android:textColor="#ffffff "
-            android:textStyle="bold"
-            android:layout_marginTop="25dp"
-
-            />
-
-        <Button
-            android:id="@+id/mail_to_in_office"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="International Office"
-            android:background="#f68026"
-            android:textColor="#ffffff "
-            android:textStyle="bold"
-            android:layout_marginTop="25dp"
-
-            />
 
         <Button
             android:id="@+id/mail_to_S_office"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Scholarships Office"
+            android:text="Auburn Career Fair Center"
             android:background="#f68026"
             android:textColor="#ffffff "
             android:textStyle="bold"
@@ -102,7 +162,7 @@
             android:id="@+id/test"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Test"
+            android:text="App Admin(s)"
             android:background="#f68026"
             android:textColor="#ffffff "
             android:textStyle="bold"
