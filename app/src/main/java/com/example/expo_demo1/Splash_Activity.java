@@ -1,5 +1,6 @@
 package com.example.expo_demo1;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -23,5 +24,3 @@ public class Splash_Activity extends AppCompatActivity{
         }, 3000);
     }
 }
-
-
